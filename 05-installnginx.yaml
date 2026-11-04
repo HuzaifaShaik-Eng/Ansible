@@ -1,0 +1,9 @@
+- name: installing and configuring nginx on redhat
+  hosts: Frontend
+  become: yes
+
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
