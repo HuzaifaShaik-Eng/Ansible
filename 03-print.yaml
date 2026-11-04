@@ -1,0 +1,8 @@
+- name: print module demo
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: printing on the screen
+    debug:
+      msg: "Hi, Welcome to Ansible Tutorial"
