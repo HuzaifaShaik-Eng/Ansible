@@ -1,7 +1,8 @@
 - name: ping demo
-  hosts: localhost
-  connection: local
+  hosts: localhost # targets localhost - where Ansible control node is running
+  connection: local #it will not expect any credentials
 
+  # defining the tasks == modules == collections
   tasks:
-  - name: "test connectivity"
+  - name: "test connectivity ping local host"
     ping:
