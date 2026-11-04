@@ -1,0 +1,8 @@
+- name: ping demo
+  hosts: local # targets local host group servers mentioned in inventory file 
+  connection: local #it will not expect any credentials
+
+  # defining the tasks == modules == collections
+  tasks:
+  - name: "test connectivity ping local host"
+    ping:
