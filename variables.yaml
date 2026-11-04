@@ -1,0 +1,13 @@
+- name: variables in ansible demo
+  hosts: local
+  connection: local
+
+  vars:
+    course: Ansible
+    trainer: Huzaifa Shaik
+    duration: 10hrs
+
+  tasks:
+  - name: Accesing play level variables
+    debug:
+      msg: "Hi, Welcome to {{ course }} course by {{ trainer }}, duration of {{ duration }}"
