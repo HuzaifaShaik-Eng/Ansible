@@ -6,7 +6,7 @@
 
   tasks:
   - name: Install Apache httpd
-    dnf:
+    package:
       name: httpd
       state: present
   
@@ -14,4 +14,4 @@
     service:
       name: httpd
       state: started
-      
+      enabled: true
