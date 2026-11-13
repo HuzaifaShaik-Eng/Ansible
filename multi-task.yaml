@@ -1,0 +1,12 @@
+- name: Running Multiple tasks
+  hosts: localhost
+  become: yes
+
+  tasks:
+
+  - name: test connectivity
+    ping:
+
+  - name: print Hello world
+    debug:
+      msg: "Hello world"
