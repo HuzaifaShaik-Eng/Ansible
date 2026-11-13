@@ -2,6 +2,7 @@
   hosts: local
   connection: local
 
+  #declaring Play level variables
   vars:
     course: Ansible
     trainer: Huzaifa Shaik
@@ -10,4 +11,5 @@
   tasks:
   - name: Accesing play level variables
     debug:
+      # Accessing variables with jinja2 syntax {{ var }}
       msg: "Hi, Welcome to {{ course }} course by {{ trainer }}, duration of {{ duration }}"
