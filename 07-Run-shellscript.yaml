@@ -5,5 +5,10 @@
 
   tasks:
 
+  - name: Modify permissions
+    file:
+      path: /home/ec2-user/cfile.sh
+      mode: u=rwx,g=x,o=x
+
   - name: Run shell script
     shell: "/home/ec2-user/cfile.sh"
