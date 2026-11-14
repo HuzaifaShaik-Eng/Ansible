@@ -1,0 +1,8 @@
+- name: Copy files from controller node to Managed Nodes
+  hosts: Frontend
+  
+  tasks:
+  - name: Copy files
+    copy:
+      src: ~/some.cfg
+      dest: /tmp/
