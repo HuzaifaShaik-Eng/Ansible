@@ -1,5 +1,6 @@
 - name: playbook to Run shell script
   hosts: Frontend
+  become: yes
 
   tasks:
 
