@@ -5,5 +5,5 @@
 
   - name: Modify permissions
     file:
-      path: ~/some.cfg
+      path: /tmp/some.cfg
       mode: u=rw,g=rw,o=rw
