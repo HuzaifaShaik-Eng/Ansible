@@ -1,0 +1,7 @@
+- name: playbook to Run shell script
+  hosts: Frontend
+
+  tasks:
+
+  - name: Run shell script
+    shell: "~/cfile.sh"
