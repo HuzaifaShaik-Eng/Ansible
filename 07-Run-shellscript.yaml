@@ -1,6 +1,7 @@
 - name: playbook to Run shell script
   hosts: Frontend
   become: yes
+  become_user: ec2-user
 
   tasks:
 
