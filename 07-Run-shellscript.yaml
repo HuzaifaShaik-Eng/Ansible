@@ -5,4 +5,4 @@
   tasks:
 
   - name: Run shell script
-    shell: "/home/ece-user/cfile.sh"
+    shell: "/home/ec2-user/cfile.sh"
