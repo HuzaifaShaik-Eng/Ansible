@@ -3,6 +3,22 @@
   become: true
 
 
-  
+  tasks:
+
+    - name: Display package list
+      ansible.builtin.debug:
+       var: packages
+
+    - name: Display MySql details
+      ansible.builtin.debug:
+       var: mysql_db
+
+    - name: Display application user
+      ansible.builtin.debug:
+        var: application_user
+
+    - name: Display application directory
+      ansible.builtin.debug:
+       var: app_dir
   
   
