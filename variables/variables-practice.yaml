@@ -1,0 +1,8 @@
+- name: variable concept in ansible Practice
+  hosts: Frontend
+  become: true
+
+
+  
+  
+  

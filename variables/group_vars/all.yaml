@@ -1,0 +1,11 @@
+  packages:
+    - vim
+    - git
+    - curl
+    - htop
+    - wget
+
+  mysql_db:
+    name: app_db
+    username: db_admin
+    port: 3306

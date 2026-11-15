@@ -1,0 +1,33 @@
+- name: Practice variables and facts
+  hosts: Frontend
+  become: true
+
+  vars:
+    package_name: nginx
+    app_user: webapp
+    app_directory: /app
+
+  tasks:
+    - name: Display package variable
+      ansible.builtin.debug:
+        msg: "package is {{ package_name }}"
+
+    - name: Display application user
+      ansible.builtin.debug:
+        msg: "Application user is {{ app_user }}"
+
+    - name: Display hostname
+      ansible.builtin.debug:
+        msg: "Hostname is {{ ansible_facts['hostname'] }}"
+
+    - name: Display Operating system
+      ansible.builtin.debug:
+        msg: "OS is {{ ansible_facts['distribution'] }}"
+
+    - name: Create application directory 
+      ansible.buitin.file:
+        path: "{{ app_directory }}"
+        state: directory
+        owner: "{{ app_user }}"
+        group: "{{ app_user }}"
+        mode: '0755'
